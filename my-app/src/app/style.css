@@ -1,0 +1,105 @@
+
+/* Entire page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Navigation */
+.murphys-navbar {
+  background-color: #004030;
+  min-height: 95px;
+}
+
+.murphys-navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.murphys-navbar .navbar-nav .nav-link:hover {
+  color: lightgray;
+}
+
+.murphys-navbar .navbar-toggler {
+  border-color: white;
+}
+
+/* Middle Section */
+.murphys-middle {
+  background-image: url("https://courses.ics.hawaii.edu/ics314f26/morea/ui-frameworks/murphys-new-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 430px;
+}
+
+/* Text in the Middle */
+.middle-content {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  transform: translateY(100px);
+}
+
+.middle-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.murphys-footer {
+  background-color: #004030;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.murphys-footer h6 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.murphys-footer hr {
+  border-color: white;
+  opacity: 0.4;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.murphys-footer p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Smaller Screens */
+@media (max-width: 768px) {
+  .murphys-middle {
+    height: 430px;
+  }
+
+  .middle-content h2 {
+    font-size: 22px;
+  }
+
+  .murphys-footer {
+    text-align: left;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.murphys-middle {
+  flex: 1;
+  min-height: 430px;
+  height: auto;
+}
